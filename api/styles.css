@@ -1,0 +1,113 @@
+/* styles.css - API Service Project */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+h2 {
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* API Request Form Styles */
+#api-request-form {
+  margin-top: 20px;
+}
+
+#api-request-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#api-request-form input[type="text"],
+#api-request-form textarea {
+  width: 95%; /* Adjusted for padding/border */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#api-request-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#api-request-form button:hover {
+  background-color: #0056b3;
+}
+
+/* API Response Styles */
+#api-response {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  white-space: pre-wrap; /* Preserves whitespace and line breaks */
+  font-family: monospace;
+}
+
+/* Error Message Styles */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Loading Indicator */
+.loading {
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  #api-request-form input[type="text"],
+  #api-request-form textarea {
+    width: 90%; /* Adjusted for padding/border */
+  }
+}
